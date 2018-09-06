@@ -1,0 +1,76 @@
+.content{width: 1200px;margin: 0 auto;height: inherit;overflow: hidden;}
+.zxzx{width: 570px;height: 586px;box-shadow: 0px 3px 15px 0px rgba(166, 166, 166, 0.25);border-radius: 4px;padding: 25px;margin: 20px 0px 10px 5px;}
+.zxzx .title{width: 100%;overflow: hidden;height: 44px;}
+.zxzx .title_left{width: 146px;border-top: 1px solid #198ff1;color: #198ff1;font-size: 20px;line-height: 44px;height: 44px;overflow: hidden;}
+.zxzx .title_right{width: 374px;height: 44px;background-color: #eff3fd;}
+.zxzx .biaoti{width: 490px;height: 77px;overflow: hidden;margin: 0 auto;line-height: 40px;text-align: center;margin-top: 35px;}
+.zxzx .biaoti a{display: inherit;width: 100%;height: 100%;overflow: hidden;color: #ed2a38;font-size: 28px;}
+.zxzx .lunbo1{width: 520px;height: 348px;overflow: hidden;margin-top: 34px;}
+.zxzx .lunbo1 .swiper-slide{width: 520px;height: 348px;overflow: hidden;}
+.zxzx .lunbo1 .swiper-slide img{width: 100%;height: 100%;}
+.zxzx .lunbo1 .swiper-pagination{background-color: rgba(0,0,0,0.6);height: 40px;bottom: 0px!important;line-height: 40px;}
+.zxzx .lunbo1 .swiper-pagination-bullet{border: solid 1px #ffffff;width: 10px;height: 10px;}
+.zxzx .lunbo1 .swiper-pagination-bullet-active{width: 10px;height: 10px;background-color: #fff;}
+.box{width: 609px;height: 283px;overflow: hidden;box-shadow: 0px 3px 15px 0px rgba(166, 166, 166, 0.25);border-radius: 4px;padding: 25px;margin: 20px 5px 0px 11px;}
+.box>.title{width: 100%;overflow: hidden;height: 44px;}
+.box .title_left{width: 146px;border-top: 1px solid #198ff1;color: #198ff1;font-size: 20px;line-height: 44px;height: 44px;overflow: hidden;}
+.box .title_right{width: 413px;height: 44px;background-color: #eff3fd;}
+.box .title_right a{float: right;color: #888888;height: 44px;line-height: 44px;font-size: 12px;margin-right: 15px;}
+.box .title_right a:hover{color: #198ff1;}
+.box .text ul li a{border-bottom: 1px solid #eaeaea;padding: 18px 0px;}
+.box .text ul li:first-child a{padding: 25px 0px 20px 0px;}
+.box .text ul li:last-child a{border: 0px;}
+.box .text ul li a{display: inherit;width: 100%;height: 100%;overflow: hidden;}
+.box .text ul li p{height: inherit;overflow: hidden;}
+.box .text ul li span{display: inline-block;}
+.box .text ul li:first-child .title{font-size: 18px;color: #ed2a38;height: 20px;width: 410px;overflow: hidden;}
+.box .text ul li .title{font-size: 16px;color: #151515;height: 20px;width: 410px;overflow: hidden;}
+.box .text ul li .title:hover{color: #198ff1;}
+.box .text ul li .date{font-size: 12px;color: #b5b5b5;text-align: right;width: 70px;height: 20px;overflow: hidden;}
+.box .text ul li .two{margin-top: 15px;}
+.box .text ul li .text{font-size: 14px;color: #888888;width: 400px;height: 20px;overflow: hidden;}
+.box .text ul li .ckxq{font-size: 14px;color: #198ff1;text-align: right;}
+.box .text ul li .ckxq img{margin-left: 5px;}
+.xxzs{padding: 25px;box-shadow: 0px 3px 15px 0px rgba(166, 166, 166, 0.25);border-radius: 4px;margin: 20px 5px 10px 5px;}
+.xxzs .title{width: 100%;overflow: hidden;height: 44px;}
+.xxzs .title_left{width: 144px;border-top: 1px solid #198ff1;color: #198ff1;font-size: 20px;line-height: 44px;height: 44px;overflow: hidden;}
+.xxzs .title_right{width: 996px;height: 44px;background-color: #eff3fd;}
+.xxzs .title_right a{float: right;color: #888888;height: 44px;line-height: 44px;font-size: 12px;margin-right: 15px;}
+.xxzs .title_right a:hover{color: #198ff1;}
+.xxzs .lunbo2{width: 100%;overflow: hidden;margin-top: 25px;}
+.xxzs .lunbo2 .swiper-slide{width: 179px;margin-right: 15px;overflow: hidden;}
+.xxzs .lunbo2 .swiper-slide:last-child{margin-right: 0px;}
+.xxzs .lunbo2 .swiper-slide img{width: 100%;height: auto;}
+.xxzs .lunbo2 .swiper-slide a{display: inherit;width: 100%;height: 100%;overflow: hidden;}
+.xxzs .lunbo2 .swiper-slide a p{width: 100%;text-align: center;margin-top: 9px;height: 20px;overflow: hidden;font-size: 16px;color: #151515;}
+.xxzs .lunbo2 .swiper-button-prev1{background-image: url(../images/zhanshi_l.png);left: 0px;}
+.xxzs .lunbo2 .swiper-button-next1{background-image: url(../images/zhanshi_r.png);right: 0px;}
+.lianjie{width: 100%;height: 150px;background-color: #f1f1f1;padding-top: 30px;margin-top: 70px;}
+.lianjie_box{width: 1200px;margin: 0 auto;position: relative;}
+.lianjie p{font-size: 24px;color: #151515;}
+.lianjie .lunbo3{margin-top: 30px;position: static;width: 98%;}
+.lianjie .lunbo3 .swiper-wrapper{width: 1083px;margin: 0 auto;}
+.lianjie .lunbo3 .swiper-slide{width: 157px!important;height: 45px;margin-right: 10px!important;}
+.lianjie .lunbo3 .swiper-slide:last-child{margin-right: 0px!important;}
+.lianjie .lunbo3 .swiper-slide a{display: inherit;width: 100%;height: 100%;overflow: hidden;}
+.lianjie .lunbo3  .swiper-button-prev2{background-image: url(../images/lianjie_l.png);width: 11px;height: 18px;background-size: 100%;left: 0px;top: 85px;}
+.lianjie .lunbo3  .swiper-button-next2{background-image: url(../images/lianjie_r.png);width: 11px;height: 18px;background-size: 100%;right: 0px;top: 85px;}
+.footer{width: 100%;height: 156px;background-color: #797979;padding-top: 40px;}
+.footer_box{width: 735px;margin: 0 auto;}
+.footer .left{width: 141px;height: 69px;overflow: hidden;}
+.footer .left a,.footer .right a{display: inherit;width: 100%;height: 100%;overflow: hidden;}
+.footer .left a img,.footer .right a img{width: 100%;height: 100%;}
+.footer .right{width: 70px;height: 85px;overflow: hidden;}
+.footer .text{width: 464px;margin: 0px 30px;}
+.footer .text a{display: inherit;width: 100%;height: 100%;overflow: hidden;color: #fff;opacity: 0.6;font-size: 14px;}
+.footer .text a:last-child{width: 373px;height: 44px;overflow: hidden;margin: 0 auto;margin-top: 30px;line-height: 25px;text-align: center;}
+.footer .text .zbdw{width: 220px;height: 20px;overflow: hidden;}
+.footer .text .cbdw{width: 234px;height: 20px;overflow: hidden;margin-left: 10px;}
+.tongzhi{position:fixed;right: 0px;top: 50%;padding:44px 0px 0px 25px;box-shadow: 0px 3px 15px 0px rgba(25, 143, 241, 0.2);border-radius: 4px;width: 289px;height: 203px;}
+.tongzhi .title{width: 100%;overflow: hidden;height: 44px;}
+.tongzhi .title_left{width: 146px;border-top: 1px solid #198ff1;color: #198ff1;font-size: 20px;line-height: 44px;height: 44px;overflow: hidden;}
+.tongzhi .title_right{width: 118px;height: 32px;background-color: #eff3fd;}
+.tongzhi .text a{display: inline-block;width: 100%;height: 100%;overflow: hidden;color: #151515;font-size: 20px;padding:15px 25px 42px 0px;line-height: 30px;}
+.tongzhi .text a:hover{color: #198ff1;}
+.tongzhi i{position: absolute;top: 4px;right: -4px;color: #198ff1;font-size: 40px;}
+
