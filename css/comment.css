@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td {margin:0;padding:0;}
 ul, li {list-style-type:none;}
 h1, h2, h3, h4, h5, h6 {font-size:100%;font-weight:normal;}
@@ -62,4 +62,28 @@ input:not([type]),input[type="email" i],input[type="number" i],input[type="passw
 .daohang ul li:first-child a i{left: 95px;}
 .daohang  .active{background-color: #ff9933;}
 .daohang ul li:hover{background-color:#ff9933;}
-/*32165465*/
+
+
+/*footer底部*/
+.lianjie{width: 100%;height: 150px;background-color: #f1f1f1;padding-top: 30px;margin-top: 70px;}
+.lianjie_box{width: 1200px;margin: 0 auto;position: relative;}
+.lianjie p{font-size: 24px;color: #151515;}
+.lianjie .lunbo3{margin-top: 30px;position: static;width: 97%;}
+/*.lianjie .lunbo3 .swiper-wrapper{width: 1083px;margin: 0 auto;}*/
+/*.lianjie .lunbo3 .swiper-slide{width: 157px!important;height: 45px;margin-right: 10px!important;}*/
+.lianjie .lunbo3 .swiper-slide:last-child{margin-right: 0px!important;}
+.lianjie .lunbo3 .swiper-slide a{display: inherit;width: 100%;height: 100%;overflow: hidden;}
+.lianjie .lunbo3 .swiper-slide a img{width: 100%;height: 100%;}
+.lianjie .lunbo3  .swiper-button-prev2{background-image: url(../images/lianjie_l.png);width: 11px;height: 18px;background-size: 100%;left: 0px;top: 85px;}
+.lianjie .lunbo3  .swiper-button-next2{background-image: url(../images/lianjie_r.png);width: 11px;height: 18px;background-size: 100%;right: 0px;top: 85px;}
+.footer{width: 100%;height: 156px;background-color: #797979;padding-top: 40px;}
+.footer_box{width: 735px;margin: 0 auto;}
+.footer .left{width: 141px;height: 69px;overflow: hidden;}
+.footer .left a,.footer .right a{display: inherit;width: 100%;height: 100%;overflow: hidden;}
+.footer .left a img,.footer .right a img{width: 100%;height: 100%;}
+.footer .right{width: 70px;height: 85px;overflow: hidden;}
+.footer .text{width: 464px;margin: 0px 30px;}
+.footer .text a{display: inherit;width: 100%;height: 100%;overflow: hidden;color: #fff;opacity: 0.6;font-size: 14px;}
+.footer .text a:last-child{width: 373px;height: 44px;overflow: hidden;margin: 0 auto;margin-top: 30px;line-height: 25px;text-align: center;}
+.footer .text .zbdw{width: 220px;height: 20px;overflow: hidden;}
+.footer .text .cbdw{width: 234px;height: 20px;overflow: hidden;margin-left: 10px;}
