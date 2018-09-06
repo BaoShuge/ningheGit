@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td {margin:0;padding:0;}
 ul, li {list-style-type:none;}
 h1, h2, h3, h4, h5, h6 {font-size:100%;font-weight:normal;}
@@ -62,5 +62,3 @@ input:not([type]),input[type="email" i],input[type="number" i],input[type="passw
 .daohang ul li:first-child a i{left: 95px;}
 .daohang  .active{background-color: #ff9933;}
 .daohang ul li:hover{background-color:#ff9933;}
-/* 1111111111111111111111111 */
-/*21654654*/
