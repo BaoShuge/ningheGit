@@ -5,11 +5,15 @@
 	<title></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/comment.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="css/iconfont.css">	
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">	
 	<script type="text/javascript" src="js/jQuery3.31.js"></script>
 	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
 </head>
 <body>
 	<div class="header">
@@ -58,13 +62,80 @@
     		<i class="iconfont icon-weizhi"></i><span>当前位置：</span><a href="javascript:;">首页</a>><a href="javascript:;">网上办事</a>
     	</div>
         <!-- 网上调查start -->
-        <div class="wsdiaocha_con">
+        <div class="wsdiaocha_con fl">
             <div class="wsdiaocha_title">
                 <p class="wsdiaocha_title_l fl">网上调查</p>
-                <p class="wsdiaocha_title_r fl fixed"></p>
+                <p class="wsdiaocha_title_r fl fixed" ><a href="javascript:;" class="fr more">更多>></a></p>
+            </div>
+            <h3>1.您对改版后的宁河教育网站的整体评价怎样？有什么样的想法觉得我们怎么样 </h3>
+            <p class="jiezhi_date">（截止日期为2018年12月31日）</p>
+            <div class="fixed">
+                <div class="xuanze fl" id="toupiao">
+                    <template>
+                      <el-radio-group v-model="radio2">
+                        <el-radio :label="1">非常满意</el-radio>
+                        <el-radio :label="2">比较满意</el-radio>
+                        <el-radio :label="3">满意</el-radio>
+                        <el-radio :label="4">有待改进</el-radio>
+                      </el-radio-group>
+                    </template>
+                </div>
+                <div class="tpjieguo fl" id="jieguo">
+                    <el-progress :percentage="100" :show-text=false color="#ff9933"></el-progress>
+                    <el-progress :percentage="80" :show-text=false color="#ff9933"></el-progress>
+                    <el-progress :percentage="100" :show-text=false color="#ff9933"></el-progress>
+                    <el-progress :percentage="50" :show-text=false color="#ff9933"></el-progress>
+                </div>
+                <div class="xzrs fr">
+                    <ul>
+                        <li>100人选择</li>
+                        <li>80人选择</li>
+                        <li>100人选择</li>
+                        <li>50人选择</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="toupiao_btn" id="toupiao_btn">
+                <input type="button" value="投票" @click="chenggong" >
+                <input type="button" value="查看结果"  onclick = "chakan()">
             </div>
         </div>
         <!-- 网上调查end -->
+        <div class="fl content_wsbs_r">
+            <!-- 政务服务start -->
+            <div class="zwfw_con">
+                <div class="zwfw_title">
+                    <p class="zwfw_title_l fl">政务服务</p>
+                    <p class="zwfw_title_r fl fixed"><a href="javascript:;" class="fr more">更多>></a></p>
+                </div>
+                <div class="zwfw_list">
+                    <ul class="fixed">
+                        <a href="javascript:;" class="fl"><li><i class="iconfont icon-shenpi"></i><span>行政审批</span></li></a>
+                        <a href="javascript:;" class="fl"><li><i class="iconfont icon-banlibuban"></i><span>在线办理</span></li></a>
+                        <a href="javascript:;" class="fl"><li><i class="iconfont icon-fuwu"></i><span>便民服务</span></li></a>
+                        <a href="javascript:;" class="fl"><li><i class="iconfont icon-ccgl-tousuguanli-11"></i><span>咨询投诉</span></li></a>
+                        <a href="javascript:;" class="fl"><li><i class="iconfont icon-tiwen"></i><span>咨询投诉</span></li></a>
+                        <a href="javascript:;" class="fl"><li><i class="iconfont icon-banlibuban"></i><span>在线办理</span></li></a>
+                        <a href="javascript:;" class="fl"><li><i class="iconfont icon-fuwu"></i><span>便民服务</span></li></a>
+                        <a href="javascript:;" class="fl"><li><i class="iconfont icon-ccgl-tousuguanli-11"></i><span>咨询投诉</span></li></a>
+                    </ul>
+                </div>
+            </div>
+            <!-- 政务服务end -->
+            <!-- 回应关切start -->
+            <div class="hygq_con">
+                <div class="zwfw_title">
+                    <p class="zwfw_title_l fl">政务服务</p>
+                    <p class="zwfw_title_r fl fixed"><a href="javascript:;" class="fr more">更多>></a></p>
+                </div>
+                <div class="zwfw_list">
+                    <div><i class="iconfont icon-wen"></i><span>外地户口能在芦台考大学吗？需要什么条件？外地户口能在芦台考大学吗？需要什么条件？</span></div>
+                    <div><i class="iconfont icon-wen"></i><span>外地户口能在芦台考大学吗？需要什么条件？外地户口能在芦台考大学吗？需要什么条件？</span></div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+        
     </div>
     <div class="lianjie">
 	    <div class="lianjie_box">
@@ -115,6 +186,31 @@
 </body>
 </html>
 <script>
+// 投票成功提示框
+    var Main = {
+        methods: {
+          chenggong() {
+            this.$message({
+              message: '投票成功',
+              type: 'success'
+            });
+          }
+        }
+      }
+    var Ctor = Vue.extend(Main)
+    new Ctor().$mount('#toupiao_btn')
+    // 查看投票结果
+    new Vue().$mount('#jieguo')
+    // 投票单选选择
+    var Main = {
+        data () {
+          return {
+            radio2: 1
+          };
+        }
+      }
+    var Ctor = Vue.extend(Main)
+    new Ctor().$mount('#toupiao')
 	//banner轮播
 	var swiper = new Swiper('.banner', {
 	    pagination: '.swiper-pagination',
@@ -134,5 +230,11 @@
 	    spaceBetween: 30,
 	    loop: true,
 	});
-
+    // 点击显示投票结果
+    $(".tpjieguo").hide();
+    $(".xzrs").hide();
+    function chakan(){ 
+       $(".tpjieguo").show();
+        $(".xzrs").show();
+    } 
 </script>
