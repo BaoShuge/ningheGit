@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/comment.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="css/iconfont.css">	
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">		
 	<script type="text/javascript" src="js/jQuery3.31.js"></script>
 	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 </head>
@@ -59,7 +59,7 @@
 	    			<p class="title_right fl"></p>
 	    		</div>
 	    		<p class="biaoti"><a href="">天津跨境电商协会第二届会员大会第一次会议暨第二届理事会</a></p>
-	    		<div class="swiper-container lunbo1">
+	    		<div class="swiper-container zxzx_lunbo">
 			        <div class="swiper-wrapper">
 			            <div class="swiper-slide">
 			            	<a href=""><img src="images/lunbo1.jpg"></a> 
@@ -163,7 +163,7 @@
     			<p class="title_left fl">学校展示</p>
     			<p class="title_right fl"></p>
     		</div>
-    		<div class="swiper-container lunbo2">
+    		<div class="swiper-container xxzs_lunbo">
 		        <div class="swiper-wrapper">
 		            <div class="swiper-slide">
 		            	<a href=""><img src="images/zhanshi1.jpg"><p>宁河第一中学</p></a>
@@ -185,15 +185,15 @@
 		            </div>
 		        </div>
 		        <!-- Add Arrows -->
-		        <div class="swiper-button-next swiper-button-next1"></div>
-		        <div class="swiper-button-prev swiper-button-prev1"></div>
+		        <div class="swiper-button-next swiper-button-next_xxzs"></div>
+		        <div class="swiper-button-prev swiper-button-prev_xxzs"></div>
 		    </div>
     	</div>
     </div>
     <div class="lianjie">
 	    <div class="lianjie_box">
 	    	<p>友情链接</p>
-			<div class="swiper-container lunbo3">
+			<div class="swiper-container yqlj_lunbo">
 		        <div class="swiper-wrapper">
 		            <div class="swiper-slide">
 		            	<a href=""><img src="images/lianjie1.png"></a>
@@ -218,8 +218,8 @@
 		            </div>
 		        </div>
 		        <!-- Add Arrows -->
-		        <div class="swiper-button-next swiper-button-next2"></div>
-		        <div class="swiper-button-prev swiper-button-prev2"></div>
+		        <div class="swiper-button-next swiper-button-next_yqlj"></div>
+		        <div class="swiper-button-prev swiper-button-prev_yqlj"></div>
 		    </div>
 	    </div>
 	</div>
@@ -249,15 +249,17 @@
 </body>
 </html>
 <script>
-    var swiper = new Swiper('.banner', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: 2500
-    });
-    var swiper = new Swiper('.lunbo1', {
+	//banner轮播
+	var swiper = new Swiper('.banner', {
+	    pagination: '.swiper-pagination',
+	    slidesPerView: 1,
+	    paginationClickable: true,
+	    spaceBetween: 30,
+	    loop: true,
+	    autoplay: 2500
+	});
+	// 最新资讯轮播
+    var swiper = new Swiper('.zxzx_lunbo', {
         pagination: '.swiper-pagination',
         slidesPerView: 1,
         paginationClickable: true,
@@ -265,24 +267,27 @@
         loop: true,
         autoplay: 2500,
     });
-    var swiper = new Swiper('.lunbo2', {
+    //学校展示轮播
+    var swiper = new Swiper('.xxzs_lunbo', {
         pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next1',
-        prevButton: '.swiper-button-prev1',
+        nextButton: '.swiper-button-next_xxzs',
+        prevButton: '.swiper-button-prev_xxzs',
         slidesPerView: 6,
         paginationClickable: true,
         spaceBetween: 30,
         loop: true,
     });
-    var swiper = new Swiper('.lunbo3', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next2',
-        prevButton: '.swiper-button-prev2',
-        slidesPerView: 7,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true,
-    });
+    // 链接轮播
+	var swiper = new Swiper('.yqlj_lunbo', {
+	    pagination: '.swiper-pagination',
+	    nextButton: '.swiper-button-next_yqlj',
+	    prevButton: '.swiper-button-prev_yqlj',
+	    slidesPerView: 7,
+	    paginationClickable: true,
+	    spaceBetween: 30,
+	    loop: true,
+	});
+    // 点击关闭通知公告
     $(document).ready(function(){
     	$(".guanbi").click(function(){
     		$(".tongzhi").hide();
