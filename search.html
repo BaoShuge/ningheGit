@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/comment.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="css/iconfont.css">	
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">		
 	<script type="text/javascript" src="js/jQuery3.31.js"></script>
 	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 </head>
@@ -53,7 +51,7 @@
     		<li><a href=""><i class="iconfont icon-tiaochabianjijilu"></i>网上办事</a></li>
     	</ul>
     </div>
-    <div class="content content_sousuo">
+    <div class="content">
     	<div class="mianbaoxie">
     		<i class="iconfont icon-weizhi"></i><span>当前位置：</span><a href="javascript:;">首页</a>><a href="javascript:;">政务公开</a>><a href="javascript:;">科室动态</a>
     	</div>
@@ -61,7 +59,7 @@
     <div class="lianjie">
 	    <div class="lianjie_box">
 	    	<p>友情链接</p>
-			<div class="swiper-container lunbo3">
+			<div class="swiper-container yqlj_lunbo">
 		        <div class="swiper-wrapper">
 		            <div class="swiper-slide">
 		            	<a href=""><img src="images/lianjie1.png"></a>
@@ -86,8 +84,8 @@
 		            </div>
 		        </div>
 		        <!-- Add Arrows -->
-		        <div class="swiper-button-next swiper-button-next2"></div>
-		        <div class="swiper-button-prev swiper-button-prev2"></div>
+		        <div class="swiper-button-next swiper-button-next_yqlj"></div>
+		        <div class="swiper-button-prev swiper-button-prev_yqlj"></div>
 		    </div>
 	    </div>
 	</div>
@@ -117,43 +115,23 @@
 </body>
 </html>
 <script>
-    var swiper = new Swiper('.banner', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: 2500
-    });
-    var swiper = new Swiper('.lunbo1', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: 2500,
-    });
-    var swiper = new Swiper('.lunbo2', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next1',
-        prevButton: '.swiper-button-prev1',
-        slidesPerView: 6,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true,
-    });
-    var swiper = new Swiper('.lunbo3', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next2',
-        prevButton: '.swiper-button-prev2',
-        slidesPerView: 7,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true,
-    });
-    $(document).ready(function(){
-    	$(".guanbi").click(function(){
-    		$(".tongzhi").hide();
-    	});
-    });
+	//banner轮播
+	var swiper = new Swiper('.banner', {
+	    pagination: '.swiper-pagination',
+	    slidesPerView: 1,
+	    paginationClickable: true,
+	    spaceBetween: 30,
+	    loop: true,
+	    autoplay: 2500
+	});
+    // 链接轮播
+	var swiper = new Swiper('.yqlj_lunbo', {
+	    pagination: '.swiper-pagination',
+	    nextButton: '.swiper-button-next_yqlj',
+	    prevButton: '.swiper-button-prev_yqlj',
+	    slidesPerView: 7,
+	    paginationClickable: true,
+	    spaceBetween: 30,
+	    loop: true,
+	});
 </script>
