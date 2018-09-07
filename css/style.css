@@ -36,6 +36,8 @@
 .content_info .text_right .text .tiaozhuan a{color:  #727070;font-size: 14px;}
 .content_info .text_right .text .tiaozhuan a:hover{color: #198ff1;}
 .content_info .text_right .text .img{width: 529px;height: 353px;overflow: hidden;margin: 0 auto;margin-top: 38px;margin-bottom: 30px;}
+.content_info .ldzc_list{display: none;}
+.content_info .jgsz_list{display: none;}
 /*政务公开*/
 .content_zwgk>.text{margin-top: 20px;height: inherit;overflow: hidden;}
 .content_zwgk .box1{width: 407px;height: 440px;background-color: #fff;box-shadow: 0px 3px 15px 0px rgba(166, 166, 166, 0.25);border-radius: 4px;margin: 20px 15px 5px 5px;padding: 25px;}
