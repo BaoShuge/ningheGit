@@ -3,25 +3,37 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 	<link rel="stylesheet" type="text/css" href="css/comment.css">
-	<link rel="stylesheet" type="text/css" href="css/list.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="css/iconfont.css">	
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">		
 	<script type="text/javascript" src="js/jQuery3.31.js"></script>
 	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+	<script src="js/vue.js"></script>
+	<!-- 引入组件库 -->
+  	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 </head>
 <body>
+	<!-- 头部start -->
 	<div class="header">
 		<div class="fl header_left">
 			<span>天津市宁河区教育局欢迎您</span>
 			<span>2018年8月16日 星期四</span>
 		</div>
-		<div class="header_right fr">
-			<input type="text" placeholder="请输入您要搜索的内容">
-			<span>全站<i class="iconfont icon-toDown xiala"></i></span>
+		<div class="header_right fr" id="app">
+			<input type="text" placeholder="请输入您要搜索的内容" class="input1">			
+			<template>
+			  <el-select v-model="value" placeholder="请选择">
+			    <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+			    </el-option>
+			  </el-select>
+			</template>
 			<a href="">搜索<i class="iconfont icon-sousuo search"></i></a>
 		</div>
 	</div>
+	<!-- 头部end -->
+	<!-- banner start -->
 	<div class="swiper-container banner">
 		<div class="logo">
 			<a href=""><img src="images/logo.png"></a>
@@ -41,8 +53,10 @@
             </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination-banner"></div>
     </div>
+    <!-- banner end -->
+    <!-- 导航 start -->
     <div class="daohang">
     	<ul>
     		<li class="active"><a href=""><i class="iconfont icon-yemian"></i>首页</a></li>
@@ -51,10 +65,245 @@
     		<li><a href=""><i class="iconfont icon-tiaochabianjijilu"></i>网上办事</a></li>
     	</ul>
     </div>
+    <!-- 导航 end -->
+    <!-- content start -->
+    <div class="content content_wz_list">
+    	<!-- 面包屑 start -->
+    	<div class="mianbaoxie">
+    		<i class="iconfont icon-weizhi"></i><span>当前位置：</span><a href="javascript:;">首页</a>><a href="javascript:;">政务公开</a>><a href="javascript:;">政治公开</a>
+    	</div>
+    	<!-- 面包屑 end -->
+    	<div class="text">
+    		<!-- 内容左侧 start-->
+    		<div class="text_left fl">
+    			<ul>
+    				<li class="zwgk"><p>政务公开</p><p class="xian"></p></li>
+    				<li class="ldzc"><p>领导之窗</p></li>
+    				<li class="jgsz"><p>机构设置</p></li>
+    				<li class="zzgk"><p>政治公开</p></li>
+    			</ul>
+    		</div>
+    		<!-- 内容左侧 end -->
+    		<!-- 内容右侧 start -->
+    		<div class="text_right_box">
+    			<!-- 政治公开列表 start-->
+    			<div class="text_right fl zzgk_list">
+	    			<ul>
+	    				<li>
+	    					<i></i><span>政治公开</span>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<!-- 政治公开end -->
+	    		<!-- 领导之窗start -->
+	    		<div class="text_right fl ldzc_list">
+	    			<ul>
+	    				<li>
+	    					<i></i><span>领导之窗</span>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<!-- 领导之窗end -->
+	    		 <!-- 机构设置start -->
+	    		<div class="text_right fl jgsz_list">
+	    			<ul>
+	    				<li>
+	    					<i></i><span>机构设置</span>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="">
+	    						<span class="biaoti">财政局关于转发《财政部关于进一步 做好政府采购信息公开工作有关 事项的通知》的通知...</span>
+	    						<span class="date">2018-01-02</span>
+	    					</a>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<!-- 机构设置end -->
+	    	</div>
+    		
+    		<!-- 内容右侧 end -->
+    	</div>
+    </div>
+    <!-- content end -->
+   	<!-- 链接 start -->
     <div class="lianjie">
 	    <div class="lianjie_box">
 	    	<p>友情链接</p>
-			<div class="swiper-container lunbo3">
+			<div class="swiper-container yqlj_lunbo">
 		        <div class="swiper-wrapper">
 		            <div class="swiper-slide">
 		            	<a href=""><img src="images/lianjie1.png"></a>
@@ -79,11 +328,13 @@
 		            </div>
 		        </div>
 		        <!-- Add Arrows -->
-		        <div class="swiper-button-next swiper-button-next2"></div>
-		        <div class="swiper-button-prev swiper-button-prev2"></div>
+		        <div class="swiper-button-next swiper-button-next_yqlj"></div>
+		        <div class="swiper-button-prev swiper-button-prev_yqlj"></div>
 		    </div>
 	    </div>
 	</div>
+	<!-- 链接 end -->
+	<!-- 底部 start -->
 	<div class="footer">
 		<div class="footer_box">
 			<div class="left fl"><a href=""><img src="images/footer_logo_1.png"></a></div>
@@ -97,16 +348,66 @@
 			</div>
 		</div>
 	</div>
+	<!-- 底部 end -->
 </body>
 </html>
 <script type="text/javascript">
-	var swiper = new Swiper('.lunbo3', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next2',
-        prevButton: '.swiper-button-prev2',
-        slidesPerView: 7,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true,
-    });
+	//banner轮播
+	var swiper = new Swiper('.banner', {
+		pagination: '.swiper-pagination-banner',
+	    slidesPerView: 1,
+	    paginationClickable: true,
+	    spaceBetween: 30,
+	    loop: true,
+	    autoplay: 2500
+	});
+	// 链接轮播
+	var swiper = new Swiper('.yqlj_lunbo', {
+	    nextButton: '.swiper-button-next_yqlj',
+	    prevButton: '.swiper-button-prev_yqlj',
+	    slidesPerView: 7,
+	    paginationClickable: true,
+	    spaceBetween: 30,
+	    loop: true,
+	});
+	//点击切换模块
+	$(document).ready(function(){
+		$(".ldzc").click(function(){
+			$(".ldzc_list").show();
+			$(".ldzc_list").siblings().hide();
+			$(".ldzc").addClass("content_wz_list click") ;
+			$(".ldzc").siblings().removeClass("content_wz_list click") ;
+		});
+		$(".jgsz").click(function(){
+			$(".jgsz_list").show();
+			$(".jgsz_list").siblings().hide(); 
+			$(".jgsz").addClass("content_wz_list click") ;
+			$(".jgsz").siblings().removeClass("content_wz_list click") ;
+		});
+		$(".zzgk").click(function(){
+			$(".zzgk_list").show();
+			$(".zzgk_list").siblings().hide(); 
+			$(".zzgk").addClass("content_wz_list click") ;
+			$(".zzgk").siblings().removeClass("content_wz_list click") ;
+		})
+	});
+	var Main = {
+    data() {
+      return {
+        options: [{
+          value: '选项1',
+          label: '全站'
+        }, {
+          value: '选项4',
+          label: '全站'
+        }, {
+          value: '选项5',
+          label: '科室动态'
+        }],
+        value: ''
+      }
+    }
+  }
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#app')
 </script>

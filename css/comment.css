@@ -39,9 +39,10 @@ input:not([type]),input[type="email" i],input[type="number" i],input[type="passw
 .header_left span{color: #151515;font-size: 18px;display: inline-block;width: 216px;height: 20px;overflow: hidden;}
 .header_left span:first-child{margin-right: 30px;}
 .header_right{width: 50%;text-align: right;position: relative;margin-top: 20px;}
-.header_right input{width: 350px;border: 1px solid #198ff1;padding-left: 111px;padding-right: 20px;height: 43px;}
-.header_right span{position: absolute;left: 180px;top: 12px;color: #198ff1;font-size: 14px;}
-.header_right span .xiala{margin-left: 5px;}
+.header_right .input1{width: 350px;border: 1px solid #198ff1;padding-left: 111px;padding-right: 20px;height: 43px;}
+.header_right .el-select{position: absolute;width:87px;left: 170px;margin-top: 2px; }
+.header_right .el-input--suffix .el-input__inner{border: 0px;text-align: right;color: #198ff1;}
+body .el-select-dropdown{margin-left: -14px;}
 .header_right a{display: inline-block;width: 90px;height: 43px;background-color: #198ff1;font-size: 16px;color: #fff;padding-right: 13px;line-height: 43px;position: relative;left: -5px;top: 1px;}
 .header_right .search{position: absolute;right: 53px;top: 2px;}
 .banner{width: 100%;height: 313px;overflow: hidden;position: relative;}
