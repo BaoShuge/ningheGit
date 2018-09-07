@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天津市宁河区教育局</title>
 	<link rel="stylesheet" type="text/css" href="css/comment.css">
-	<link rel="stylesheet" type="text/css" href="css/list.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css">	
 	<script type="text/javascript" src="js/jQuery3.31.js"></script>
 	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 </head>
 <body>
-	<div class="header">
+    <div class="header">
 		<div class="fl header_left">
 			<span>天津市宁河区教育局欢迎您</span>
 			<span>2018年8月16日 星期四</span>
@@ -52,6 +52,9 @@
     		<li><a href=""><i class="iconfont icon-dangyuan"></i>政务公开</a></li>
     		<li><a href=""><i class="iconfont icon-tiaochabianjijilu"></i>网上办事</a></li>
     	</ul>
+    </div>
+    <div class="content">
+        <div></div>
     </div>
     <div class="lianjie">
 	    <div class="lianjie_box">
@@ -99,10 +102,36 @@
 			</div>
 		</div>
 	</div>
+	
 </body>
 </html>
-<script type="text/javascript">
-	var swiper = new Swiper('.lunbo3', {
+<script>
+    var swiper = new Swiper('.banner', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: 2500
+    });
+    var swiper = new Swiper('.lunbo1', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: 2500,
+    });
+    var swiper = new Swiper('.lunbo2', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next1',
+        prevButton: '.swiper-button-prev1',
+        slidesPerView: 6,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true,
+    });
+    var swiper = new Swiper('.lunbo3', {
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next2',
         prevButton: '.swiper-button-prev2',
@@ -110,5 +139,10 @@
         paginationClickable: true,
         spaceBetween: 30,
         loop: true,
+    });
+    $(document).ready(function(){
+    	$(".guanbi").click(function(){
+    		$(".tongzhi").hide();
+    	});
     });
 </script>
