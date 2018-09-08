@@ -49,7 +49,7 @@
 .content_zwgk .box1 .title_right a{float: right;color: #888888;height: 44px;line-height: 44px;font-size: 12px;margin-right: 10px;}
 .content_zwgk .box1 .title_right a:hover{color: #198ff1;}
 .content_zwgk .box1 ul li{overflow: hidden;border-bottom: 1px solid #eaeaea;}
-.content_zwgk .box1 ul li a{width: 331px;padding: 20px 0px;display: inherit;width: 100%;height: 100%;overflow: hidden;color: #151515;font-size: 16px;}
+.content_zwgk .box1 ul li a{width: 331px;margin: 20px 0px;display: inherit;width: 100%;height: 20px;overflow: hidden;color: #151515;font-size: 16px;}
 .content_zwgk .box1 ul li:last-child{border-bottom: 0px;}
 .content_zwgk .box1 ul li a:hover{color: #198ff1;}
 .content_zwgk .box2,.content_zwgk .box3{width: 768px;height: 440px;background-color: #fff;box-shadow: 0px 3px 15px 0px rgba(166, 166, 166, 0.25);border-radius: 4px;margin: 20px 5px 5px 0px;padding: 25px;}
@@ -61,12 +61,12 @@
 .content_zwgk .box2 ul li{width: 347px;margin-right: 24px;border-bottom: 1px solid #eaeaea;float: left;}
 .content_zwgk .box2 ul li:nth-of-type(2n){margin-right: 0px;}
 .content_zwgk .box2 ul li:nth-of-type(11),.content_zwgk .box2 ul li:nth-of-type(12){border: 0px;}
-.content_zwgk .box2 ul li a{width: 331px;padding: 20px 0px;display: inherit;width: 100%;height: 100%;overflow: hidden;color: #151515;font-size: 16px;}
+.content_zwgk .box2 ul li a{width: 331px;margin: 20px 0px;display: inherit;width: 100%;height: 20px;overflow: hidden;color: #151515;font-size: 16px;}
 .content_zwgk .box2 ul li a:hover{color: #198ff1;}
 .content_zwgk .box3{margin-bottom: 70px;}
 .content_zwgk .box3 ul li{width: 100%;border-bottom: 1px solid #eaeaea;}
 .content_zwgk .box3 ul li:last-child{border: 0px;}
-.content_zwgk .box3 ul li a{display: inherit;width: 100%;height: 100%;overflow: hidden;padding:20px 0px;}
+.content_zwgk .box3 ul li a{width: 331px;margin: 20px 0px;display: inherit;width: 100%;height: 20px;overflow: hidden;color: #151515;font-size: 16px;}
 .content_zwgk .box3 ul li:first a{padding-top: 25px;}
 .content_zwgk .box3 ul li a .title{width: 603px;height: 20px;overflow: hidden;float: left;color: #151515;font-size: 16px;}
 .content_zwgk .box3 ul li a .date{width: 74px;height: 20px;overflow: hidden;float: right;color: #b5b5b5;font-size: 12px;}
